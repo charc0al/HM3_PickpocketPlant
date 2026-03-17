@@ -120,8 +120,7 @@
 							"DetachAndReleaseItem": ["cafe80fd62c49b5f"]
 						},
 						"Out03": {
-							"PickupIntoHands": ["cafe1e02fdbe517b"],
-							"SetFalse": ["cafe56e548e30abc"]
+							"PickupIntoHands": ["cafe1e02fdbe517b"]
 						}
 					}
 				}
@@ -180,7 +179,7 @@
 						},
 						"m_bValueuseonce": {
 							"type": "bool",
-							"value": true
+							"value": false
 						},
 						"m_eidParent": {
 							"type": "SEntityTemplateReference",
@@ -731,8 +730,7 @@
 						"Out03": { "Drop": ["cafeb94f7fd4da9a"] },
 						"Out04": { "Poll": ["cafe8f893131a0e8"] },
 						"Out05": {
-							"ConsumeFromInventory": ["cafeb94f7fd4da9a"],
-							"SetFalse": ["cafe56e548e30abc"]
+							"ConsumeFromInventory": ["cafeb94f7fd4da9a"]
 						}
 					}
 				}
@@ -791,7 +789,7 @@
 						},
 						"m_bValueuseonce": {
 							"type": "bool",
-							"value": true
+							"value": false
 						},
 						"m_eidParent": {
 							"type": "SEntityTemplateReference",
