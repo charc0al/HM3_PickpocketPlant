@@ -220,7 +220,7 @@
 						},
 						"m_eActionType": {
 							"type": "EActionType",
-							"value": "AT_USE_HOLD"
+							"value": "AT_USE_NORMAL"
 						},
 						"m_rContextLocation": {
 							"type": "SEntityTemplateReference",
