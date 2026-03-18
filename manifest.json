@@ -4,7 +4,7 @@
 	"id": "Cyb.PickPlant",
 	"name": "Pickpocket & Plant Mod",
 	"description": "Enables 47 to pickpocket and plant items on NPCs.",
-	"authors": ["Cyb"],
+	"authors": ["Cyb", "Charc0al"],
 	"contentFolders": ["content-default"],
 	"frameworkVersion": "2.33.27",
 	"options": [
