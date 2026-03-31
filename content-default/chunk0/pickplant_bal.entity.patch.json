@@ -87,7 +87,9 @@
 								"cafe0aaaef3af0bd",
 								"cafedee743d0355c",
 								"cafe8c9046d7555e",
-								"cafea1fa345f433b"
+								"cafea1fa345f433b",
+								"cafe4d5a4ce12f10",
+								"cafe54a549db4ae0"
 							],
 							"postInit": true
 						}
@@ -1001,7 +1003,9 @@
 								"cafec62787f0dc39",
 								"cafe0aaaef3af0bd",
 								"cafedee743d0355c",
-								"cafe92c799836f46"
+								"cafe92c799836f46",
+								"cafe4d5a4ce12f10",
+								"cafe54a549db4ae0"
 							],
 							"postInit": true
 						}
@@ -1044,6 +1048,116 @@
 						"m_bCheckItemOnBack": {
 							"type": "bool",
 							"value": false
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6a3de53b02d1",
+				{
+					"parent": "cafe2ffb1a861cce",
+					"name": "ActorKeywordCondition Dead",
+					"factory": "[modules:/zactorkeywordcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zactorkeywordcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_rActor": {
+							"type": "SEntityTemplateReference",
+							"value": "0594561be5ddfb63"
+						},
+						"m_rRequirements": {
+							"type": "SEntityTemplateReference",
+							"value": "cafec80149169e56",
+							"postInit": true
+						},
+						"m_bSubscribeToKeywordChanges": {
+							"type": "bool",
+							"value": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec80149169e56",
+				{
+					"parent": "cafe2ffb1a861cce",
+					"name": "Keyword_ACTOR_DEAD",
+					"factory": "[assembly:/_pro/design/gamecore/keywords/keywordsactor.template?/keyword_actor_dead.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordsactor.template?/keyword_actor_dead.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe4d5a4ce12f10",
+				{
+					"parent": "cafe2ffb1a861cce",
+					"name": "InvertedCondition ActorDead",
+					"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_rCondition": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe6a3de53b02d1",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe5f72b9244f7e",
+				{
+					"parent": "cafe2ffb1a861cce",
+					"name": "ActorKeywordCondition Pacified",
+					"factory": "[modules:/zactorkeywordcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zactorkeywordcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_rActor": {
+							"type": "SEntityTemplateReference",
+							"value": "0594561be5ddfb63"
+						},
+						"m_rRequirements": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe1d76f59a7064",
+							"postInit": true
+						},
+						"m_bSubscribeToKeywordChanges": {
+							"type": "bool",
+							"value": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1d76f59a7064",
+				{
+					"parent": "cafe2ffb1a861cce",
+					"name": "Keyword_ACTOR_PACIFIED",
+					"factory": "[assembly:/_pro/design/gamecore/keywords/keywordsactor.template?/keyword_actor_pacified.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordsactor.template?/keyword_actor_pacified.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe54a549db4ae0",
+				{
+					"parent": "cafe2ffb1a861cce",
+					"name": "InvertedCondition ActorPacified",
+					"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_rCondition": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe5f72b9244f7e",
+							"postInit": true
 						}
 					}
 				}
